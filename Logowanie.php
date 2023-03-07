@@ -19,7 +19,7 @@
     <div class="main">
         
         <div class="menu">
-            <div class="logo"><img class="Logo" src="img/favicon.png" alt=""> Wakacyjny czar</div>
+            <div class="Logo"> <img id="logo"#Logo src="img/napislogo1.png" alt=""></div>
             <div class="Home">Home</div>
             <div class="oferta">Oferta </div>
             <div class="Onas">O nas</div>
