@@ -13,7 +13,7 @@
     <div id="main">
         
         <div id="menu">
-            <div id="logo"></div>
+            <div id="logo"> Wakacyjny czar</div>
             <div id="Home">Home</div>
             <div id="oferta">Oferta </div>
             <div id="Onas">O nas</div>
