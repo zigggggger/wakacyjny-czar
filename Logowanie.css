@@ -158,10 +158,11 @@ button.prejestracja:hover{
 
 }
 
-div.panel-rejestracja{
+div#panel-rejestracja{
     margin: auto;  
     width: 60%;
     height: fit-content;
+    display: none;
 
 }
 form.panel-rejestracja{
@@ -194,4 +195,12 @@ input.panel-zaj{
 
 input.panel-zaj:hover{
     background-color: black;
+}
+
+
+div#panel-logowanie{
+    margin: auto;  
+    width: 60%;
+    height: fit-content;
+    display: none;
 }

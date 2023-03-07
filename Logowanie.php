@@ -7,7 +7,6 @@
     <title>Wakacyjny czar</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="Logowanie.css">
-
 </head>
 <body>
     <?php
@@ -29,10 +28,10 @@
         </div>
         <div class="logowanie">
             <div class="przyciski">
-            <button class="plogowanie">Logowanie</button> 
-            <button class="prejestracja">Rejestracja</button></div>
-            <div class="panel-rejestracja">
-                
+            <button class="plogowanie" onclick="pokazL()">Logowanie</button> 
+            <button class="prejestracja" onclick="pokazR()">Rejestracja</button></div>
+            <div id="panel-rejestracja">
+            
                 <?php
                     // $Username = $_POST["Username"];
                     // $e_mail = $_POST["e-mail"];
@@ -54,32 +53,42 @@
                     <input class="panel" type="text" name="Address" placeholder="Adres (Ulica i numer domu/numer mieszkania)"><br>
                     <input class="panel-zaj" type="button" value="Zajerestruj">
                 </form>
-        </div>
-        </div>
-    
-        <!-- <div class="panel-log">
+            </div>
+
+            <div id="panel-logowanie">
             <?php
-                $con = new mysqli($servername, $username, $password);
-                if(isset($_POST["submit"])){
-                    if($_POST["password"] == "sekret1"){
-                    ?>
-                    Tutaj jest chroniona zawartość...
-                    <?php
-                    }
-                    else{
-                    echo "Nieprawidłowe hasło";
-                    }
-                }
-                else{
-                echo "Wprowadź hasło";
-                }
+                // $con = new mysqli($servername, $username, $password);
+                // if(isset($_POST["submit"])){
+                //     if($_POST["password"] == "sekret1"){
             ?>
-            <form method="POST">
-                <input type="text" name="login" placeholder="Podaj nazwę użytkownika lub e-mail">
-                <input type="password" name="password" placeholder="Podaj hasło">
-                <input type="submit" name="submit" value="Wyślij">
+                     <!-- Tutaj jest chroniona zawartość... -->
+             <?php
+                //     }
+                //     else{
+                //     echo "Nieprawidłowe hasło";
+                //     }
+                // }
+                // else{
+                // echo "Wprowadź hasło";
+                //}
+            ?>
+            <form class="panel-rejestracja" method="POST">
+                <input class="panel" type="text" name="login" placeholder="Podaj nazwę użytkownika lub e-mail">
+                <input class="panel" type="password" name="password" placeholder="Podaj hasło">
+                <input class="panel-zaj" type="submit" name="submit" value="Wyślij">
             </form>
-        </div> -->
+            </div>
+            <script>
+                function pokazL() {
+
+                }
+
+                function pokazR() {
+                
+                }
+            </script>
+                    
+        </div>
     </div>
 </body>
 </html>
