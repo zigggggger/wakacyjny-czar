@@ -8,12 +8,12 @@ body{
 
 .main{
     width: 100%;
-    height: 100%;
-    height: 800px;
+    height: fit-content;
     max-width: 1200px;
     margin: auto ;
     background-color: rgb(68, 72, 76, 0.4);
     margin-top: 40px;
+    padding-bottom: 50px;
 }
 
 
@@ -98,7 +98,13 @@ img.logo{
     width: auto;
     border-radius: 10px;
 
-}div.logowanie{
+}
+div.przyciski{
+    width: 100%;
+    height:fit-content;
+    display: flex;
+}
+div.logowanie{
     width: 100%;
     max-width: 900px;
     height: fit-content;
@@ -112,11 +118,12 @@ img.logo{
 
 }
 
-button.logowanie{
+div.plogowanie{
     background-color: blue;
     color: white;
     border: 0px;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 50px;
     border-radius: 50px;
     float: left;
@@ -124,14 +131,16 @@ button.logowanie{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10%;
+    text-align: center;
+    line-height: 50px;
 }
 
-
-button.rejestracja{
+div.prejestracja{
     background-color: blue;
     color: white;
     border: 0px;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 50px;
     border-radius: 50px;
     float: right;
@@ -139,32 +148,54 @@ button.rejestracja{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10%;
+    text-align: center;
+    line-height: 50px;
+
+}
+div.plogowanie:hover{
+    background-color: lightgray;
+    color: black;
+}
+div.prejestracja:hover{
+    background-color: lightgray;
+    color: black;
 
 }
 
 div.panel-rejestracja{
-    clear: left;
-    margin-left: auto;
-    width: 80%;
+    margin: auto;  
+    width: 60%;
     height: fit-content;
 
 }
-
+form.panel-rejestracja{
+    background-color: lightgray;
+    border-radius: 20px;
+}
 input.panel{
     background-color: white;
     border: 1px solid black;
     padding: 10px;
     border-radius: 15px;
     margin: 5px;
-
+    margin-left: 39px;
+    margin-right: 39px ;
+    float: left;
 }
 
 input.panel-zaj{
     background-color: blue;
     border: 1px solid transparent;
-    padding: 20px;
-    border-radius: 50px;
-    color: white;
-    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px;
+    margin-left: 39px;
+    margin-right: 39px ;
+    width: 190px;
     clear: left;
+    color: white;
+}
+
+input.panel-zaj:hover{
+    background-color: black;
 }

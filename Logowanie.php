@@ -28,8 +28,7 @@
 
         </div>
         <div class="logowanie">
-            <button class="logowanie">Logowanie</button>
-            <button class="rejestracja">Rejestracja</button>
+            <div class="przyciski"><div class="plogowanie">Logowanie</div> <div class="prejestracja">Rejestracja</div></div>
             <div class="panel-rejestracja">
                 
                 <?php
