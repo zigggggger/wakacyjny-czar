@@ -28,8 +28,8 @@
 
         </div>
         <div class="logowanie">
-            <div class="przyciski"><div class="plogowanie">Logowanie</div> 
-            <div class="prejestracja">Rejestracja</div>
+            <button class="plogowanie">Logowanie</button> 
+            <button class="prejestracja">Rejestracja</button>
         </div>
             <div class="panel-rejestracja">
                 

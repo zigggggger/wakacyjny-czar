@@ -118,7 +118,7 @@ div.logowanie{
 
 }
 
-div.plogowanie{
+button.plogowanie{
     background-color: blue;
     color: white;
     border: 0px;
@@ -131,11 +131,9 @@ div.plogowanie{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10%;
-    text-align: center;
-    line-height: 50px;
 }
 
-div.prejestracja{
+button.prejestracja{
     background-color: blue;
     color: white;
     border: 0px;
@@ -148,15 +146,13 @@ div.prejestracja{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10%;
-    text-align: center;
-    line-height: 50px;
 
 }
-div.plogowanie:hover{
+button.plogowanie:hover{
     background-color: lightgray;
     color: black;
 }
-div.prejestracja:hover{
+button.prejestracja:hover{
     background-color: lightgray;
     color: black;
 
