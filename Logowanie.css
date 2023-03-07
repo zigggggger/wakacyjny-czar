@@ -13,7 +13,7 @@ body{
     max-width: 1200px;
     margin: auto ;
     background-color: rgb(68, 72, 76, 0.4);
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 
@@ -31,11 +31,11 @@ body{
     font-size: 30px;
     padding: 8px;
     margin: 2px;
-    width: 300pf;
+    border-radius: 10px;
 
 }
 img.logo{
-    width: 300px;
+
     float: left ;
 }
 
@@ -44,10 +44,23 @@ img.logo{
     height: 100%;
     max-height: 100px;
     float: left;
-    font-size: 44px;
-    padding: 8px;
+    font-size: 40px;
+    padding: 10.5px;
     margin: 2px;
     width: auto;
+    border-radius: 10px;
+}
+.Blank{
+    border: 0px solid transparent;
+    height: 100%;
+    max-height: 100px;
+    float: left;
+    font-size: 40px;
+    padding: 10.5px;
+    margin: 2px;
+    width: 100%;
+    max-width: 320px;
+    
 }
 
 .oferta{
@@ -55,10 +68,11 @@ img.logo{
     height: 100%;
     max-height: 100px;
     float: left;
-    font-size: 44px;
-    padding: 8px;
+    font-size: 40px;
+    padding: 10.5px;
     margin: 2px;
     width: auto;
+    border-radius: 10px;
 
 }
 .Onas{
@@ -66,11 +80,11 @@ img.logo{
     height: 100%;
     max-height: 100px;
     float: left;
-    font-size: 44px;
-    padding: 8px;
+    font-size: 40px;
+    padding: 10.5px;
     margin: 2px;
     width: auto;
-
+    border-radius: 10px;
 }
 
 .Konto{
@@ -78,18 +92,21 @@ img.logo{
     height: 100%;
     max-height: 100px;
     float: left;
-    font-size: 44px;
-    padding: 8px;
+    font-size: 40px;
+    padding: 10.5px;
     margin: 2px;
     width: auto;
+    border-radius: 10px;
 
 }div.logowanie{
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
+    height: 80%;
     margin: auto;
     background-color: white;
     border-radius: 50px;
     display: flex;
+    height: fit-content;
     
 }
 
@@ -101,9 +118,11 @@ button.logowanie{
     height: 50px;
     border-radius: 50px;
     float: left;
-    margin-left: 150px;
-    
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 
 button.rejestracja{
     background-color: blue;
@@ -113,7 +132,36 @@ button.rejestracja{
     height: 50px;
     border-radius: 50px;
     float: right;
-    margin-right: 150px;
-    
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
+}
+
+div.panel-rejestracja{
+    margin: auto;
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: aqua;
+
+}
+
+input.panel{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px;
+
+}
+
+input.panel-zaj{
+    background-color: blue;
+    border: 1px solid transparent;
+    padding: 20px;
+    border-radius: 50px;
+    color: white;
+    margin: auto;
+    
 }

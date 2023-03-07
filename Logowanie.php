@@ -20,6 +20,7 @@
         
         <div class="menu">
             <div class="Logo"> <img id="logo"#Logo src="img/napislogo1.png" alt=""></div>
+            <hr class="Blank">
             <div class="Home">Home</div>
             <div class="oferta">Oferta </div>
             <div class="Onas">O nas</div>
@@ -29,30 +30,31 @@
         <div class="logowanie">
             <button class="logowanie">Logowanie</button>
             <button class="rejestracja">Rejestracja</button>
-        </div>
-        <div class="panel-rej">
+            <div class="panel-rejestracja">
                 <?php
-                    $Username = $_POST["Username"];
-                    $e_mail = $_POST["e-mail"];
-                    $Password = $_POST["password"];
-                    $con = new mysqli($servername, $username, $password);
-                    if(isset($_POST["submit"])){
-                        $sql = "INSERT INTO user (Username, e-mail, password) VALUES ('$Username', '$e_mail', '$Password')";
-                    }
+                    // $Username = $_POST["Username"];
+                    // $e_mail = $_POST["e-mail"];
+                    // $Password = $_POST["password"];
+                    // $con = new mysqli($servername, $username, $password);
+                    // if(isset($_POST["submit"])){
+                    //     $sql = "INSERT INTO user (Username, e-mail, password) VALUES ('$Username', '$e_mail', '$Password')";
+                    // }
                 ?>
-                <form action="POST">
-                    <input type="text" name="Username" placeholder="Nazwa użytkownika">
-                    <input type="text" name="e-mail" placeholder="Adres E-mail">
-                    <input type="password" name="password" id="pass1" placeholder="Hasło">
-                    <input type="password" id="pass2" placeholder="Powtórz hasło">
-                    <input type="text" name="Name" placeholder="Imię">
-                    <input type="text" name="Surname" placeholder="Nazwisko">
-                    <input type="text" name="City" placeholder="Miasto">
-                    <input type="text" name="Zip-code" placeholder="Kod pocztowy (XX-XXX)">
-                    <input type="text" name="Address" placeholder="Adres (Ulica i numer domu/numer mieszkania)">
-                    <input type="button" value="submit">
+                <form class="panel-rejestracja" action="POST">
+                    <input class="panel" type="text" name="Username" placeholder="Nazwa użytkownika">
+                    <input class="panel" type="text" name="e-mail" placeholder="Adres E-mail">
+                    <input class="panel" type="password" name="password" id="pass1" placeholder="Hasło">
+                    <input class="panel" type="password" id="pass2" placeholder="Powtórz hasło">
+                    <input class="panel" type="text" name="Name" placeholder="Imię">
+                    <input class="panel" type="text" name="Surname" placeholder="Nazwisko">
+                    <input class="panel" type="text" name="City" placeholder="Miasto">
+                    <input class="panel" type="text" name="Zip-code" placeholder="Kod pocztowy (XX-XXX)">
+                    <input class="panel" type="text" name="Address" placeholder="Adres (Ulica i numer domu/numer mieszkania)"><br>
+                    <input class="panel-zaj" type="button" value="Zajerestruj">
                 </form>
         </div>
+        </div>
+    
         <!-- <div class="panel-log">
             <?php
                 $con = new mysqli($servername, $username, $password);
