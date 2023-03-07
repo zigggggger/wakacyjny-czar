@@ -9,8 +9,21 @@
 </head>
 <body>
     <div id="main">
-        svbcvbncvb
-        <div id="">
+        
+        <div id="menu">
+            <div id="logo"></div>
+            <div id="Home">Home</div>
+            <div id="oferta">Oferta </div>
+            <div id="Onas">O nas</div>
+            <div id="Konto">Konto</div>
+
+        </div>
+        <div id="logowanie">
+            s
+            <button id="logowanie">Logowanie</button>
+            <button id="rejestracja">Rejestracja</button>
+        </div>
+        <div>
 
         </div>
     </div>
