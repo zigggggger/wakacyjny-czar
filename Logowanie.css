@@ -12,7 +12,7 @@ body{
     height: 800px;
     max-width: 1200px;
     margin: auto ;
-    background-color: rgb(68, 72, 76, 0.2);
+    background-color: rgb(68, 72, 76, 0.4);
     margin-top: 50px;
 }
 
@@ -20,10 +20,7 @@ body{
 #menu{
     padding: 10px;
     margin: auto;
-    
     width: 100%;
-    
-
 }  
 
 div#logo{
@@ -36,10 +33,12 @@ div#logo{
     font-size: 30px;
     padding: 10px;
     margin: 2px;
-    font-weight: 800;
 
 }
-
+img#Logo{
+    width: 60px;
+    height: 60px;
+}
 #Home{
     background-color: white;
     max-height: 60px;
