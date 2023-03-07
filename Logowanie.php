@@ -31,6 +31,7 @@
             <button class="logowanie">Logowanie</button>
             <button class="rejestracja">Rejestracja</button>
             <div class="panel-rejestracja">
+                
                 <?php
                     // $Username = $_POST["Username"];
                     // $e_mail = $_POST["e-mail"];
