@@ -10,24 +10,49 @@
 
 </head>
 <body>
-    <div id="main">
+    <?php
+        $servername = "localhost";
+        $username = "admin";
+        $password = "";
+    ?>
+    <div class="main">
         
-        <div id="menu">
-            <div id="logo"><img id="Logo" src="img/favicon.png" alt=""> Wakacyjny czar</div>
-            <div id="Home">Home</div>
-            <div id="oferta">Oferta </div>
-            <div id="Onas">O nas</div>
-            <div id="Konto">Konto</div>
+        <div class="menu">
+            <div class="logo"><img class="Logo" src="img/favicon.png" alt=""> Wakacyjny czar</div>
+            <div class="Home">Home</div>
+            <div class="oferta">Oferta </div>
+            <div class="Onas">O nas</div>
+            <div class="Konto">Konto</div>
 
         </div>
-        <div id="logowanie">
-            s
-            <button id="logowanie">Logowanie</button>
-            <button id="rejestracja">Rejestracja</button>
+        <div class="logowanie">
+            <button class="logowanie">Logowanie</button>
+            <button class="rejestracja">Rejestracja</button>
         </div>
-        <div>
-
+        <div class="panel-log">
+        <?php
+            $con = new mysqli($servername, $username, $password);
+            if(isset($_POST["submit"])){
+                if($_POST["password"] == "sekret1"){
+                ?>
+                Tutaj jest chroniona zawartość...
+                <?php
+                }
+                else{
+                echo "Nieprawidłowe hasło";
+                }
+            }
+            else{
+            echo "Wprowadź hasło";
+            }
+            ?>
+            <form method="POST">
+                <input type="text" name="login" placeholder="Podaj nazwę użytkownika lub e-mail">
+                <input type="password" name="password" placeholder="Podaj hasło">
+                <input type="submit" name="submit" value="Wyślij">
+            </form>
         </div>
+        <div class="panel-rej"></div>
     </div>
 </body>
 </html>
