@@ -159,8 +159,10 @@ button.prejestracja:hover{
 
 }
 form.panel-rejestracja{
-    background-color: lightgray;
+    background-color: lightgrey;
     border-radius: 20px;
+    width: 60%;
+    margin: auto;
 }
 input.panel{
     background-color: white;
@@ -190,15 +192,21 @@ input.panel-zaj:hover{
     background-color: black;
 }
 
-
-div#panel-logowanie{
-    margin: auto;  
-    width: 60%;
-    height: fit-content;
+form.panel-logowanie{
+    background-color: lightgray;
+    border-radius: 20px;
+    margin: auto;
 }
+
 div#panel-rejestracja{
     margin: auto;  
-    width: 60%;
     height: fit-content;
+    display: none;
+}
 
+div#panel-logowanie{
+    margin: auto; 
+    width: 60%; 
+    height: fit-content;
+    display: none;
 }
