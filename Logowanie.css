@@ -116,7 +116,7 @@ div.logowanie{
     border-radius: 50px;
     padding: 10px;
 
-
+    
 }
 
 button.plogowanie{
@@ -158,13 +158,6 @@ button.prejestracja:hover{
     color: black;
 
 }
-
-div.panel-rejestracja{
-    margin: auto;  
-    width: 60%;
-    height: fit-content;
-
-}
 form.panel-rejestracja{
     background-color: lightgray;
     border-radius: 20px;
@@ -202,5 +195,10 @@ div#panel-logowanie{
     margin: auto;  
     width: 60%;
     height: fit-content;
-    display: none;
+}
+div#panel-rejestracja{
+    margin: auto;  
+    width: 60%;
+    height: fit-content;
+
 }
