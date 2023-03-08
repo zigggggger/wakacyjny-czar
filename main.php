@@ -10,6 +10,10 @@
 </head>
 <body>
 <div class="main">
+    <div class="Logo">
+        <img class="zdj" src="img/logo.png" alt="">
+        <img class="zdj" src="img/napis.png" alt="">
+    </div>
     <div class="menu">
         <div class="Home">Home</div>
         <div class="oferta">Oferta </div>

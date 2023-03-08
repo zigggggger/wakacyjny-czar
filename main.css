@@ -6,6 +6,22 @@ body{
     font-family: 'Open Sans';
 }
 
+.Logo{
+    width: 100%;
+    height: fit-content;
+}
+
+.zdj{
+    margin: auto;
+    display: flex;
+    width: 60%;
+}
+.zdji{
+    margin: auto;
+    display: flex;
+    width: 60%;
+}
+
 .main{
     width: 100%;
     height: fit-content;
