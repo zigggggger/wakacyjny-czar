@@ -15,8 +15,14 @@
             <hr class="Blank">
             <div class="Home">Home</div>
             <div class="oferta">Oferta </div>
-            <div class="Onas">O nas</div>
-            <div class="Konto">Konto</div>
+            <div class="Onas">O nas
+                <div class="Onas1">Polityka prywatności</div>
+                <div class="Onas1">O nas</div>
+            </div>
+            <div class="Konto">Konto
+                <div class="Konto1">Moje wycieczki</div>
+                <div class="Konto1">Ustawienia</div>
+            </div>
 
         </div>
         <script>

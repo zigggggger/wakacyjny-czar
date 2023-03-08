@@ -49,6 +49,7 @@ img.logo{
     margin: 2px;
     width: auto;
     border-radius: 10px;
+    text-align: center;
 }
 .Blank{
     border: 0px solid transparent;
@@ -73,30 +74,70 @@ img.logo{
     margin: 2px;
     width: auto;
     border-radius: 10px;
-
+    text-align: center;
 }
 .Onas{
     background-color: white;
     height: 100%;
-    max-height: 100px;
+    max-height: 200px;
     float: left;
     font-size: 40px;
     padding: 10.5px;
     margin: 2px;
     width: auto;
     border-radius: 10px;
+    width: 100%;
+    max-width: 110px;
+    text-align: center;
 }
 .Konto{
     background-color: white;
     height: 100%;
-    max-height: 100px;
+    max-height: 200px;
     float: left;
     font-size: 40px;
     padding: 10.5px;
     margin: 2px;
     width: auto;
     border-radius: 10px;
+    width: 100%;
+    max-width: 110px;
+    text-align: center;
 
+}
+
+.Konto1{
+    display: none;
+    border: 0px solid transparent;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+}
+
+.Onas1{
+    display: none;
+    border: 0px solid transparent;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+}
+
+div.Konto:hover .Konto1 {
+    display: block;
+    background-color: lightgray;
+}
+
+div.Onas:hover .Onas1 {
+    display: block;
+    background-color: lightgray;
 }
 div.przyciski{
     width: 100%;
