@@ -21,54 +21,26 @@ body{
     padding: 10px;
     margin: auto;
     width: 100%;
-}  
-
-.Logo{
-    background-color: white;
-    max-height: 60px;
-    float: left;
     display: flex;
-    font-size: 30px;
-    padding: 8px;
-    margin: 2px;
-    border-radius: 10px;
-
-}
-img.logo{
-
-    float: left ;
-}
+} 
 
 .Home{
     background-color: white;
     height: 100%;
     max-height: 100px;
-    float: left;
     font-size: 40px;
     padding: 10.5px;
     margin: 2px;
     width: auto;
     border-radius: 10px;
     text-align: center;
-}
-.Blank{
-    border: 0px solid transparent;
-    height: 100%;
-    max-height: 100px;
-    float: left;
-    font-size: 40px;
-    padding: 10.5px;
-    margin: 2px;
-    width: 100%;
-    max-width: 320px;
-    
+    margin-left: auto;
 }
 
 .oferta{
     background-color: white;
     height: 100%;
     max-height: 100px;
-    float: left;
     font-size: 40px;
     padding: 10.5px;
     margin: 2px;
@@ -80,7 +52,6 @@ img.logo{
     background-color: white;
     height: 100%;
     max-height: 200px;
-    float: left;
     font-size: 40px;
     padding: 10.5px;
     margin: 2px;
@@ -94,7 +65,6 @@ img.logo{
     background-color: white;
     height: 100%;
     max-height: 200px;
-    float: left;
     font-size: 40px;
     padding: 10.5px;
     margin: 2px;
@@ -103,7 +73,7 @@ img.logo{
     width: 100%;
     max-width: 110px;
     text-align: center;
-
+    margin-right: auto;
 }
 
 .Konto1{

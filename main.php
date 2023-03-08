@@ -5,14 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wakacyjny czar</title>
-    <link rel="stylesheet" href="główna.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 </head>
 <body>
 <div class="main">
     <div class="menu">
-        <div class="Logo"> <img id="logo"#Logo src="img/napislogo1.png" alt=""></div>
-        <hr class="Blank">
         <div class="Home">Home</div>
         <div class="oferta">Oferta </div>
         <div class="Onas">O nas
