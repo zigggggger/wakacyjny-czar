@@ -19,10 +19,22 @@
             <div class="Konto">Konto</div>
 
         </div>
+        <script>
+            function pokazL() {
+            document.getElementById("panel-rejestracja").style.display = 'none';
+            document.getElementById("panel-logowanie").style.display = 'block';
+            }
+
+            function pokazR() {
+            document.getElementById("panel-rejestracja").style.display = 'block';
+            document.getElementById("panel-logowanie").style.display = 'none';
+            }
+
+        </script>
         <div class="logowanie">
             <div class="przyciski">
-            <button class="plogowanie">Logowanie</button> 
-            <button class="prejestracja">Rejestracja</button></div>
+            <button id="plogowanie" onclick="pokazL()">Logowanie</button> 
+            <button id="prejestracja" onclick="pokazR()">Rejestracja</button></div>
             <div id="panel-rejestracja">
                 <form class="panel-rejestracja" action="POST">
                     <input class="panel" type="text" name="Username" placeholder="Nazwa użytkownika">
@@ -44,6 +56,7 @@
                     <input class="panel-zaj" type="submit" name="submit" value="Wyślij">
                 </form>
             </div> 
+    
         </div>    
     </div>
 </body>
