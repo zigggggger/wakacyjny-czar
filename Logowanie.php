@@ -7,6 +7,7 @@
     <title>Wakacyjny czar</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="Logowanie.css">
+
 </head>
 <body>
     <?php
@@ -27,53 +28,12 @@
 
         </div>
         <div class="logowanie">
-            <button value="showLog()">Logowanie</button>
-            <script>
-                function showLog() {
-                    document.getElementById("log").style.visibility = 'visible';
-                }
-            </script>
-            <div class="panel-log" id="log">
-                <?php
-                    // $con = new mysqli($servername, $username, $password);
-                    // if(isset($_POST["submit"])){
-                    //     if($_POST["password"] == "sekret1"){
-                ?>
-                        <!-- Tutaj jest chroniona zawartość... -->
-                <?php
-                    //     }
-                    //     else{
-                    //     echo "Nieprawidłowe hasło";
-                    //     }
-                    // }
-                    // else{
-                    // echo "Wprowadź hasło";
-                    //}
-                ?>
-                <form method="POST">
-                    <input class="panel" type="text" name="login" placeholder="Podaj nazwę użytkownika lub e-mail">
-                    <input class="panel" type="password" name="password" placeholder="Podaj hasło">
-                    <input class="panel-zaj" type="submit" name="submit" value="Zaloguj się">
-                </form>
-            </div>
-            <!-- <div class="przyciski">
+            <div class="przyciski">
             <button class="plogowanie" onclick="pokazL()">Logowanie</button> 
-            <button class="prejestracja" onclick="pokazR()">Rejestracja</button></div> -->
-            <script>
-                function showLog() {
-                    document.getElementById("log").style.display = 'block';
-                }
-            </script>
-        </div>
-        <div class="rejestracja">
+            <button class="prejestracja" onclick="pokazR()">Rejestracja</button></div>
+            <div id="panel-rejestracja">
             
-            <button value="showRej()">Rejestracja</button>
-            <script>
-                function showRej() {
-                    show(document.querySelectorAll(".panel-rej"), "block")
-                }
-            </script>
-            <?php
+                <?php
                     // $Username = $_POST["Username"];
                     // $e_mail = $_POST["e-mail"];
                     // $Password = $_POST["password"];
@@ -81,23 +41,55 @@
                     // if(isset($_POST["submit"])){
                     //     $sql = "INSERT INTO user (Username, e-mail, password) VALUES ('$Username', '$e_mail', '$Password')";
                     // }
+                ?>
+                <form class="panel-rejestracja" action="POST">
+                    <input class="panel" type="text" name="Username" placeholder="Nazwa użytkownika">
+                    <input class="panel" type="text" name="e-mail" placeholder="Adres E-mail">
+                    <input class="panel" type="password" name="password" id="pass1" placeholder="Hasło">
+                    <input class="panel" type="password" id="pass2" placeholder="Powtórz hasło">
+                    <input class="panel" type="text" name="Name" placeholder="Imię">
+                    <input class="panel" type="text" name="Surname" placeholder="Nazwisko">
+                    <input class="panel" type="text" name="City" placeholder="Miasto">
+                    <input class="panel" type="text" name="Zip-code" placeholder="Kod pocztowy (XX-XXX)">
+                    <input class="panel" type="text" name="Address" placeholder="Adres (Ulica i numer domu/numer mieszkania)"><br>
+                    <input class="panel-zaj" type="button" value="Zajerestruj">
+                </form>
+            </div>
+
+            <div id="panel-logowanie">
+            <?php
+                // $con = new mysqli($servername, $username, $password);
+                // if(isset($_POST["submit"])){
+                //     if($_POST["password"] == "sekret1"){
             ?>
-            <div class="panel-rej">
-                <form action="POST">
-                <input class="panel" type="text" name="Username" placeholder="Nazwa użytkownika">
-                <input class="panel" type="text" name="e-mail" placeholder="Adres E-mail">
-                <input class="panel" type="password" name="password" id="pass1" placeholder="Hasło">
-                <input class="panel" type="password" id="pass2" placeholder="Powtórz hasło">
-                <input class="panel" type="text" name="Name" placeholder="Imię">
-                <input class="panel" type="text" name="Surname" placeholder="Nazwisko">
-                <input class="panel" type="text" name="City" placeholder="Miasto">
-                <input class="panel" type="text" name="Zip-code" placeholder="Kod pocztowy (XX-XXX)">
-                <input class="panel" type="text" name="Address" placeholder="Adres (Ulica i numer domu/numer mieszkania)"><br>
-                <input class="panel-zaj" type="button" value="Zajerestruj">
+                     <!-- Tutaj jest chroniona zawartość... -->
+             <?php
+                //     }
+                //     else{
+                //     echo "Nieprawidłowe hasło";
+                //     }
+                // }
+                // else{
+                // echo "Wprowadź hasło";
+                //}
+            ?>
+            <form class="panel-rejestracja" method="POST">
+                <input class="panel" type="text" name="login" placeholder="Podaj nazwę użytkownika lub e-mail">
+                <input class="panel" type="password" name="password" placeholder="Podaj hasło">
+                <input class="panel-zaj" type="submit" name="submit" value="Wyślij">
             </form>
             </div>
+            <script>
+                function pokazL() {
+
+                }
+
+                function pokazR() {
+                
+                }
+            </script>
+                    
         </div>
-        
-        
+    </div>
 </body>
 </html>
