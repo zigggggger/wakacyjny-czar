@@ -5,19 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wakacyjny czar</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="Logowanie.css">
-
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 </head>
 <body>
-    <?php
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $databaseName = "wakacyjny-czar";
-    ?>
     <div class="main">
-        
         <div class="menu">
             <div class="Logo"> <img id="logo"#Logo src="img/napislogo1.png" alt=""></div>
             <hr class="Blank">
@@ -28,21 +20,23 @@
             <div class="Konto">Konto</div>
 
         </div>
+        <script>
+            function pokazL() {
+            document.getElementById("panel-rejestracja").style.display = 'none';
+            document.getElementById("panel-logowanie").style.display = 'block';
+            }
+
+            function pokazR() {
+            document.getElementById("panel-rejestracja").style.display = 'block';
+            document.getElementById("panel-logowanie").style.display = 'none';
+            }
+
+        </script>
         <div class="logowanie">
             <div class="przyciski">
-            <button class="plogowanie" onclick="pokazL()">Logowanie</button> 
-            <button class="prejestracja" onclick="pokazR()">Rejestracja</button></div>
+            <button id="plogowanie" onclick="pokazL()">Logowanie</button> 
+            <button id="prejestracja" onclick="pokazR()">Rejestracja</button></div>
             <div id="panel-rejestracja">
-            
-                <?php
-                    // $Username = $_POST["Username"];
-                    // $e_mail = $_POST["e-mail"];
-                    // $Password = $_POST["password"];
-                    // $con = new mysqli($servername, $username, $password);
-                    // if(isset($_POST["submit"])){
-                    //     $sql = "INSERT INTO user (Username, e-mail, password) VALUES ('$Username', '$e_mail', '$Password')";
-                    // }
-                ?>
                 <form class="panel-rejestracja" action="POST">
                     <input class="panel" type="text" name="Username" placeholder="Nazwa użytkownika">
                     <input class="panel" type="text" name="e-mail" placeholder="Adres E-mail">
@@ -56,41 +50,15 @@
                     <input class="panel-zaj" type="button" value="Zajerestruj">
                 </form>
             </div>
-
             <div id="panel-logowanie">
-            <?php
-                // $con = new mysqli($servername, $username, $password);
-                // if(isset($_POST["submit"])){
-                //     if($_POST["password"] == "sekret1"){
-            ?>
-                     <!-- Tutaj jest chroniona zawartość... -->
-             <?php
-                //     }
-                //     else{
-                //     echo "Nieprawidłowe hasło";
-                //     }
-                // }
-                // else{
-                // echo "Wprowadź hasło";
-                //}
-            ?>
-            <form class="panel-rejestracja" method="POST">
-                <input class="panel" type="text" name="login" placeholder="Podaj nazwę użytkownika lub e-mail">
-                <input class="panel" type="password" name="password" placeholder="Podaj hasło">
-                <input class="panel-zaj" type="submit" name="submit" value="Wyślij">
-            </form>
-            </div>
-            <script>
-                function pokazL() {
-
-                }
-
-                function pokazR() {
-                
-                }
-            </script>
-                    
-        </div>
+                <form class="panel-logowanie" method="POST">
+                    <input class="panel" type="text" name="login" placeholder="Podaj nazwę użytkownika lub e-mail">
+                    <input class="panel" type="password" name="password" placeholder="Podaj hasło">
+                    <input class="panel-zaj" type="submit" name="submit" value="Wyślij">
+                </form>
+            </div> 
+    
+        </div>    
     </div>
 </body>
 </html>

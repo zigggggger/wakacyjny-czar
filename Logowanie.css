@@ -115,10 +115,10 @@ div.logowanie{
     border-radius: 50px;
     padding: 10px;
 
-
+    
 }
 
-button.plogowanie{
+button#plogowanie{
     background-color: blue;
     color: white;
     border: 0px;
@@ -133,7 +133,7 @@ button.plogowanie{
     margin-left: 10%;
 }
 
-button.prejestracja{
+button#prejestracja{
     background-color: blue;
     color: white;
     border: 0px;
@@ -148,25 +148,20 @@ button.prejestracja{
     margin-right: 10%;
 
 }
-button.plogowanie:hover{
+button#plogowanie:hover{
     background-color: lightgray;
     color: black;
 }
-button.prejestracja:hover{
+button#prejestracja:hover{
     background-color: lightgray;
     color: black;
-
-}
-
-div.panel-rejestracja{
-    margin: auto;  
-    width: 60%;
-    height: fit-content;
 
 }
 form.panel-rejestracja{
-    background-color: lightgray;
+    background-color: lightgrey;
     border-radius: 20px;
+    width: 60%;
+    margin: auto;
 }
 input.panel{
     background-color: white;
@@ -196,10 +191,22 @@ input.panel-zaj:hover{
     background-color: black;
 }
 
+form.panel-logowanie{
+    background-color: lightgray;
+    border-radius: 20px;
+    margin: auto;
+}
 
-div#panel-logowanie{
+div#panel-rejestracja{
     margin: auto;  
-    width: 60%;
     height: fit-content;
     display: none;
+}
+
+div#panel-logowanie{
+    margin: auto; 
+    width: 60%; 
+    height: fit-content;
+    display: none;
+
 }
