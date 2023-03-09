@@ -28,7 +28,7 @@
     </div>
 
     <div class="rekomendacje">
-    
+
     </div>
 
     <div class="topoferta">
@@ -46,5 +46,11 @@
         <div class="panelst">Napisz do nas! <br> <br> wakacyjny.czar@gmail.com </div>
     </div>
 </div>
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
