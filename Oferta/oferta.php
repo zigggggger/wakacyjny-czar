@@ -22,6 +22,8 @@
             <div class="Konto"><a class="Duze" href="../Konto/konto.php">Konto</a>
                 <div class="Konto1"><a href="../Konto/mojewycieczki.php">Moje wycieczki</a></div>
                 <div class="Konto1"><a href="../Konto/ustawienia.php">Ustawienia</a></div>
+                <div class="Konto1"><a href="../logowanie.php">Logowanie i rejestracja</a></div>
+
             </div>
         </div>
 </div>
