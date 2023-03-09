@@ -258,6 +258,5 @@ div#panel-logowanie{
     margin: auto; 
     width: 60%; 
     height: fit-content;
-    display: none;
-
+    display: block;
 }

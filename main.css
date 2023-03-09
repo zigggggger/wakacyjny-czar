@@ -14,7 +14,7 @@ body{
 .zdj{
     margin: auto;
     display: flex;
-    width: 50%;
+    width: 55%;
 }
 
 .main{
@@ -125,7 +125,6 @@ a {
     color: black;
 }
 
-
 .stopka{
     background-color: white;
     width: 90%;
@@ -133,6 +132,8 @@ a {
     margin: auto;
     border: 1px solid transparent;
     border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
     
 }
@@ -160,4 +161,35 @@ a {
     float: left;
     margin: 6px;
 
+}
+
+.rekomendacje{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}   
+
+
+.topoferta{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+}
+
+.inspiracje{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
 }

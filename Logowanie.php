@@ -11,13 +11,19 @@
 <body>
    
     <div class="main">
-        <div class="menu">
+    <div class="menu">
             <div class="Logo"> <img id="logo"#Logo src="img/napislogo1.png" alt=""></div>
             <hr class="Blank">
-            <div class="Home">Home</div>
-            <div class="oferta">Oferta </div>
-            <div class="Onas">O nas</div>
-            <div class="Konto">Konto</div>
+            <div class="Home"><a class="Duze" href="http://www.onet.pl"target="_blank">Home</a></div>
+            <div class="oferta"><a class="Duze" href="http://www.onet.pl"target="_blank">Oferta</a></div>
+            <div class="Onas">O nas
+              <div class="Onas1"><a href="http://www.onet.pl"target="_blank">Polityka prywatności</a></div>
+                <div class="Onas1"><a href="http://www.onet.pl"target="_blank">O nas</a></div>
+            </div>
+            <div class="Konto">Konto
+                <div class="Konto1"><a href="http://www.onet.pl"target="_blank">Moje wycieczki</a></div>
+                <div class="Konto1"><a href="http://www.onet.pl"target="_blank">Ustawienia</a></div>
+            </div>
 
         </div>
         <script>
