@@ -193,7 +193,7 @@ a {
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 30px;
-    padding: 20px;
+    
 }
 
 .rekomendacja{
@@ -217,12 +217,13 @@ a {
     text-align: center;
 }
 .inspiracja{
-    width: 29%;
+    width: 28%;
     border-left: 1px solid black;
     border-right: 1px solid black;
     padding: 20px;
     border-radius: 20px;
-    display: inline-block
+    display: inline-block;
+    margin: 6.4px;
 }
 
 .zdjins{
