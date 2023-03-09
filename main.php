@@ -27,8 +27,13 @@
         </div>
     </div>
 
+    <div class="topoferta">
 
+    </div>
 
+    <div class="inspiracje">
+
+    </div>
 
     <div class="stopka">
         <div class="napis">Skontatkuj się z nami:</div>
