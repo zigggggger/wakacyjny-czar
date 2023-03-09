@@ -15,11 +15,12 @@ function rejestracja($Username, $e_mail, $Password, $Password2, $Name, $Surname,
         $Address = htmlentities($Address);
 
         $_SESSION['error'] = [];
-        if ($Username = ''){
+        $Error = false;
+        if ($Username == ''){
             array_push($_SESSION['error'], 'Nie podano nazwy użytkownika');
             $Error = true;
         }
-        if ($e_mail = ''){
+        if ($e_mail == ''){
             array_push($_SESSION['error'], 'Nie podano adresu e-mail');
             $Error = true;
         }
@@ -66,8 +67,7 @@ function rejestracja($Username, $e_mail, $Password, $Password2, $Name, $Surname,
             $result = $conn->query("SELECT ID FROM clients WHERE `Name` = '$Name' AND `Surname` = '$Surname' AND `City` = '$City' AND `Zip_code` = '$Zip_code' AND `Address` = '$Address';");
             $result = $result->fetch_assoc();
             $result = $result['ID'];
-            $sql2 = "INSERT INTO `user` (`ID`, `Username`, `e-mail`, `Password`) VALUES ($result, '$Username', '$e_mail' , '$Password_hash')";
-            $conn->query($sql2);
+            $conn->query("INSERT INTO `user` (`ID`, `Username`, `e-mail`, `Password`) VALUES ($result, '$Username', '$e_mail' , '$Password_hash')");
             $conn->close();
 
         }
