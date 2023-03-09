@@ -26,6 +26,22 @@
             <div class="Konto1"><a href="http://www.onet.pl"target="_blank">Ustawienia</a></div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="stopka">
+        <div class="napis">Skontatkuj się z nami:</div>
+        <div class="panelst">Zadzwoń do nas! <br><br> 213-742-069</div>
+        <div class="panelst">Godziny otwarcia <br> 8-20 Pon-Pt <br>10-18 Sob-Nd</div>
+        <div class="panelst">Napisz do nas! <br> <br> wakacyjny.czar@gmail.com </div>
+    </div>
 </div>
 </body>
 </html>
