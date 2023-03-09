@@ -18,12 +18,14 @@
             <div class="Onas">O nas</div>
             <div class="Konto">Konto</div>
             <div class="Onas">O nas
-                <div class="Onas1"><a href="http://www.onet.pl"><input type="submit" value="Polityka prywatności"></a></div>
-                <div class="Onas1"><a href="http://www.onet.pl"><input type="submit" value="O nas"></a></div>
+                <div class="Onas1">
+                   <a href="http://www.onet.pl"target="_blank">Polityka Prywatności</a>
+                </div>
+                <div class="Onas1"><a href="http://www.onet.pl"target="_blank">O nas</a></div>
             </div>
             <div class="Konto">Konto
-                <div class="Konto1"><a href="http://www.onet.pl"><input type="submit" value="Moje wycieczki"></a></div>
-                <div class="Konto1"><a href="http://www.onet.pl"><input type="submit" value="Ustawienia"></a></div>
+                <div class="Konto1"><a href="http://www.onet.pl"target="_blank">Moje wycieczki</a></div>
+                <div class="Konto1"><a href="http://www.onet.pl"target="_blank">Ustawienia</a></div>
             </div>
 
         </div>
