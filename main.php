@@ -28,10 +28,10 @@
     </div>
 
     <div class="rekomendacje">
-    <div class="rekomendacja"><ion-icon class="ikona" name="airplane-outline"></ion-icon><br>0<br>Liczba zadowolonych klientów</div>
+    <div class="rekomendacja"><ion-icon class="ikona" name="people-outline"></ion-icon><br>0<br>Liczba zadowolonych klientów</div>
     <div class="rekomendacja"><ion-icon class="ikona" name="airplane-outline"></ion-icon><br>0<br>Liczba zrealizowanych wycieczek</div>
-    <div class="rekomendacja"><ion-icon class="ikona" name="airplane-outline"></ion-icon><br>0<br>Liczba indywidualnych konsultacji</div>
-    <div class="rekomendacja"><ion-icon class="ikona" name="airplane-outline"></ion-icon><br>0%<br>Pozytywnych opini </div>
+    <div class="rekomendacja"><ion-icon class="ikona" name="call-outline"></ion-icon><br>0<br>Liczba indywidualnych konsultacji</div>
+    <div class="rekomendacja"><ion-icon class="ikona" name="star-outline"></ion-icon><br>  0%<br>Pozytywnych opini </div>
     </div>
 
     <div class="topoferta">
