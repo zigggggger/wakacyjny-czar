@@ -28,9 +28,9 @@
     </div>
 
     <div class="rekomendacje">
-    <div class="rekomendacja"><ion-icon class="ikona" name="people-outline"></ion-icon><br>0<br>Liczba zadowolonych klientów</div>
-    <div class="rekomendacja"><ion-icon class="ikona" name="airplane-outline"></ion-icon><br>0<br>Liczba zrealizowanych wycieczek</div>
-    <div class="rekomendacja"><ion-icon class="ikona" name="call-outline"></ion-icon><br>0<br>Liczba indywidualnych konsultacji</div>
+    <div class="rekomendacja"><ion-icon class="ikona" name="people-outline"></ion-icon><br><p class="count" data-value="3456"></p><br>Zadowolonych klientów</div>
+    <div class="rekomendacja"><ion-icon class="ikona" name="airplane-outline"></ion-icon><br>0<br>Zrealizowanych wycieczek</div>
+    <div class="rekomendacja"><ion-icon class="ikona" name="call-outline"></ion-icon><br>0<br>Indywidualnych konsultacji</div>
     <div class="rekomendacja"><ion-icon class="ikona" name="star-outline"></ion-icon><br>  0%<br>Pozytywnych opini </div>
     </div>
 
@@ -50,7 +50,7 @@
     </div>
 </div>
 
-
+<script></script>
 
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
