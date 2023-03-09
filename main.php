@@ -28,18 +28,21 @@
     </div>
 
     <div class="rekomendacje">
-    <div class="rekomendacja"><ion-icon class="ikona" name="people-outline"></ion-icon><br><p class="count" data-value="3456"></p><br>Zadowolonych klientów</div>
+    <div class="rekomendacja"><ion-icon class="ikona" name="people-outline"></ion-icon><br>0<br>Zadowolonych klientów</div>
     <div class="rekomendacja"><ion-icon class="ikona" name="airplane-outline"></ion-icon><br>0<br>Zrealizowanych wycieczek</div>
     <div class="rekomendacja"><ion-icon class="ikona" name="call-outline"></ion-icon><br>0<br>Indywidualnych konsultacji</div>
     <div class="rekomendacja"><ion-icon class="ikona" name="star-outline"></ion-icon><br>  0%<br>Pozytywnych opini </div>
     </div>
 
     <div class="topoferta">
-
+        <div ></div>
     </div>
 
     <div class="inspiracje">
-
+        <div class="mainins">Inspiracje</div>
+        <div class="inspiracja"> <img class="zdjins" src="img/sample.jpg" alt=""><p class="textins">in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis</p></div>
+        <div class="inspiracja"> <img class="zdjins" src="img/sample.jpg" alt=""><p class="textins">in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis</p></div>
+        <div class="inspiracja"> <img class="zdjins" src="img/sample.jpg" alt=""><p class="textins">in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis</p></div>
     </div>
 
     <div class="stopka">

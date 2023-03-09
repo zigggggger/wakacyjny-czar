@@ -189,10 +189,11 @@ a {
     background-color: white;
     width: 90%;
     margin: auto;
-    height: 100px;
+    height: fit-content;
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 30px;
+    padding: 20px;
 }
 
 .rekomendacja{
@@ -200,7 +201,7 @@ a {
     width: 25%;
     margin: auto;
     text-align: center;
-    float: left;
+    
 
 }
 
@@ -208,4 +209,28 @@ a {
     font-size: 45px;
     padding-top: 10px;
 }
+.mainins{
+    width: 100%;
+    height: fit-content;
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+}
+.inspiracja{
+    width: 29%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    display: inline-block
+}
 
+.zdjins{
+    float: left;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.textins{
+
+}
