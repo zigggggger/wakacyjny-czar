@@ -112,7 +112,7 @@ img.logo{
     display: none;
     border: 0px solid transparent;
     position: relative;
-    background-color: white;
+    background-color: lightgray;
     border-radius: 10px;
     font-size: 15px;
     padding: 5px;
@@ -124,7 +124,7 @@ img.logo{
     display: none;
     border: 0px solid transparent;
     position: relative;
-    background-color: white;
+    background-color: lightgray;
     border-radius: 10px;
     font-size: 15px;
     padding: 5px;
@@ -134,12 +134,12 @@ img.logo{
 
 div.Konto:hover .Konto1 {
     display: block;
-    background-color: lightgray;
+    
 }
 
 div.Onas:hover .Onas1 {
     display: block;
-    background-color: lightgray;
+    
 }
 div.przyciski{
     width: 100%;
@@ -147,16 +147,13 @@ div.przyciski{
     display: flex;
 }
 a {
-    background-color: #fcfcfc;
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 16px 30px;
-    text-align: center;
+    font-size: 15px;
     text-decoration: none;
-    display: inline-block;
-    font-size: 5px;
-    border-radius:20px;
-    border: 5px #ffffff solid;
+    color: black;
+    background-color: transparent;
+}
+.Duze{
+    font-size: 40px;
 }
 div.logowanie{
     width: 100%;
