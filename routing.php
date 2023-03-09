@@ -84,7 +84,6 @@ function rejestracja($Username, $e_mail, $Password, $Password2, $Name, $Surname,
     }
     else{
         $_SESSION['error'] = 'Podano złą nazwę użytkownika lub hasło';
-        header()
     }
 
 
