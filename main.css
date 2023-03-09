@@ -171,6 +171,7 @@ a {
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 30px;
+    height: fit-content;
 }   
 
 
@@ -193,3 +194,32 @@ a {
     margin-bottom: 50px;
     border-radius: 30px;
 }
+
+.rekomendacja{
+    font-size: 130px;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+}
+
+.ikona{
+    font-size: 50px;
+}
+
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  div.count {
+    transition: --num 5s;
+    counter-set: num var(--num);
+    font: 800 40px system-ui;
+  }
+  div.count::after {
+    content: counter(num);
+  }
+  div.count:hover {
+    --num: 250;
+  }
