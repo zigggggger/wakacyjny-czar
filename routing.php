@@ -1,7 +1,7 @@
 <?php
 require_once("config.php");
-
-
+// FUNKCJE
+// REJESTRACJA
 function rejestracja($Username, $e_mail, $Password, $Password2, $Name, $Surname, $City, $Zip_code, $Address)
 {
         $Username = htmlentities($Username);
@@ -15,11 +15,12 @@ function rejestracja($Username, $e_mail, $Password, $Password2, $Name, $Surname,
         $Address = htmlentities($Address);
 
         $_SESSION['error'] = [];
-        if ($Username = ''){
+        $Error = false;
+        if ($Username == ''){
             array_push($_SESSION['error'], 'Nie podano nazwy użytkownika');
             $Error = true;
         }
-        if ($e_mail = ''){
+        if ($e_mail == ''){
             array_push($_SESSION['error'], 'Nie podano adresu e-mail');
             $Error = true;
         }
@@ -66,15 +67,40 @@ function rejestracja($Username, $e_mail, $Password, $Password2, $Name, $Surname,
             $result = $conn->query("SELECT ID FROM clients WHERE `Name` = '$Name' AND `Surname` = '$Surname' AND `City` = '$City' AND `Zip_code` = '$Zip_code' AND `Address` = '$Address';");
             $result = $result->fetch_assoc();
             $result = $result['ID'];
-            $sql2 = "INSERT INTO `user` (`ID`, `Username`, `e-mail`, `Password`) VALUES ($result, '$Username', '$e_mail' , '$Password_hash')";
-            $conn->query($sql2);
+            $conn->query("INSERT INTO `user` (`ID`, `Username`, `e-mail`, `Password`) VALUES ($result, '$Username', '$e_mail' , '$Password_hash')");
             $conn->close();
-
         }
+
     }
+
+//LOGOWANIE
+ function logowanie($Username, $Password)
+ {
+    $conn = DB()->query("SELECT ID, Username, Password FROM user WHERE Username = '$Username' ");
+    $dane = $conn->fetch_assoc();
+    if ($dane['Username'] == $Username && $dane['Password'] == $Password){
+        $_SESSION['Username'] = $Username;
+        $_SESSION['UserID'] = $dane['ID'];
+    }
+    else{
+        $_SESSION['error'] = 'Podano złą nazwę użytkownika lub hasło';
+        header()
+    }
+
+
+ }
+
+
+
+
+
+//WYWOŁYWANIE
     if(isset($_POST["rejestruj"])){
         rejestracja($_POST["Username"], $_POST["e-mail"], $_POST["password"], $_POST["password2"], $_POST["Name"], $_POST["Surname"], $_POST["City"], $_POST["Zip-code"], $_POST["Address"]);
         header("location: /Logowanie.php");
     }
-
+    if(isset($_POST["loguj"])){
+        logowanie($_POST["Username"], $_POST["password"]);
+        header("location: /main.php");
+    }
 ?>

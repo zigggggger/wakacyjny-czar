@@ -58,9 +58,9 @@
             </div>
             <div id="panel-logowanie">
                 <form class="panel-logowanie" method="POST">
-                    <input class="panel" type="text" name="login" placeholder="Podaj nazwę użytkownika lub e-mail">
+                    <input class="panel" type="text" name="login" placeholder="Podaj nazwę użytkownika">
                     <input class="panel" type="password" name="password" placeholder="Podaj hasło">
-                    <input class="panel-zaj" type="submit" name="submit" value="Wyślij">
+                    <input class="panel-zaj" type="submit" name="loguj" value="Wyślij">
                 </form>
             </div> 
     
