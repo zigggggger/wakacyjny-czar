@@ -27,6 +27,10 @@
         </div>
     </div>
 
+    <div class="rekomendacje">
+
+    </div>
+
     <div class="topoferta">
 
     </div>
