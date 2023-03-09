@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 09 Mar 2023, 14:19
+-- Czas generowania: 07 Mar 2023, 14:10
 -- Wersja serwera: 10.4.27-MariaDB
 -- Wersja PHP: 8.1.12
 
@@ -35,13 +35,6 @@ CREATE TABLE `clients` (
   `Zip_code` varchar(6) NOT NULL,
   `Address` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Zrzut danych tabeli `clients`
---
-
-INSERT INTO `clients` (`ID`, `Name`, `Surname`, `City`, `Zip_code`, `Address`) VALUES
-(3, 'Michał', 'Zygmanowski', 'Przemęt', '64-234', 'Saczkowo, 7');
 
 -- --------------------------------------------------------
 
@@ -83,15 +76,9 @@ CREATE TABLE `user` (
   `ID` int(11) NOT NULL,
   `Username` varchar(25) NOT NULL,
   `e-mail` varchar(35) NOT NULL,
-  `Password` varchar(25) NOT NULL
+  `Password` varchar(25) NOT NULL,
+  `ID_client` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Zrzut danych tabeli `user`
---
-
-INSERT INTO `user` (`ID`, `Username`, `e-mail`, `Password`) VALUES
-(3, 'qweqw', 'm.zygmanowski24@gmail.com', '$2y$10$8tHomXUl754mpRq/f7');
 
 --
 -- Indeksy dla zrzutów tabel
@@ -121,7 +108,8 @@ ALTER TABLE `travels`
 -- Indeksy dla tabeli `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`ID`),
+  ADD KEY `personal_data` (`ID_client`);
 
 --
 -- AUTO_INCREMENT dla zrzuconych tabel
@@ -131,7 +119,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT dla tabeli `clients`
 --
 ALTER TABLE `clients`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT dla tabeli `orders`
@@ -143,6 +131,12 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT dla tabeli `travels`
 --
 ALTER TABLE `travels`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT dla tabeli `user`
+--
+ALTER TABLE `user`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
@@ -160,7 +154,7 @@ ALTER TABLE `orders`
 -- Ograniczenia dla tabeli `user`
 --
 ALTER TABLE `user`
-  ADD CONSTRAINT `client1234` FOREIGN KEY (`ID`) REFERENCES `clients` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `personal_data` FOREIGN KEY (`ID_client`) REFERENCES `clients` (`ID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
