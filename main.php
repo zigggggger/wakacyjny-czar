@@ -15,15 +15,15 @@
         <img class="zdj" src="img/napis.png" alt="">
     </div>
     <div class="menu">
-        <div class="Home">Home</div>
+        <div class="Home"><a class="Duze" href="http://www.onet.pl"target="_blank">Home</a></div>
         <div class="oferta">Oferta </div>
         <div class="Onas">O nas
-            <div class="Onas1">Polityka prywatności</div>
-            <div class="Onas1">O nas</div>
+            <div class="Onas1"><a href="http://www.onet.pl"target="_blank">Polityka prywatności</a></div>
+            <div class="Onas1"><a href="http://www.onet.pl"target="_blank">O nas</a></div>
         </div>
         <div class="Konto">Konto
-            <div class="Konto1">Moje wycieczki</div>
-            <div class="Konto1">Ustawienia</div>
+            <div class="Konto1"><a href="http://www.onet.pl"target="_blank">Moje wycieczki</a></div>
+            <div class="Konto1"><a href="http://www.onet.pl"target="_blank">Ustawienia</a></div>
         </div>
     </div>
 </div>
