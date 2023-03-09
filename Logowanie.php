@@ -9,12 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 </head>
 <body>
-    <?php
-        $servername = "localhost";
-        $usrnme = "root";
-        $passwd = "";
-        $databaseName = "wakacyjny-czar";
-    ?>
+   
     <div class="main">
         <div class="menu">
             <div class="Logo"> <img id="logo"#Logo src="img/napislogo1.png" alt=""></div>
@@ -43,15 +38,15 @@
             <button id="prejestracja" onclick="pokazR()">Rejestracja</button></div>
             <div id="panel-rejestracja">
                 <form class="panel-rejestracja" method="POST" action="routing.php">
-                    <input class="panel" type="text" name="Username" placeholder="Nazwa użytkownika">
-                    <input class="panel" type="text" name="e-mail" placeholder="Adres E-mail">
-                    <input class="panel" type="password" name="password" id="pass1" placeholder="Hasło">
-                    <input class="panel" type="password" id="pass2" placeholder="Powtórz hasło">
-                    <input class="panel" type="text" name="Name" placeholder="Imię">
-                    <input class="panel" type="text" name="Surname" placeholder="Nazwisko">
-                    <input class="panel" type="text" name="City" placeholder="Miasto">
-                    <input class="panel" type="text" name="Zip-code" placeholder="Kod pocztowy (XX-XXX)">
-                    <input class="panel" type="text" name="Address" placeholder="Adres (Ulica i numer domu/numer mieszkania)"><br>
+                    <input class="panel" type="text" name="Username" placeholder="Nazwa użytkownika" maxlength="25">
+                    <input class="panel" type="text" name="e-mail" placeholder="Adres E-mail" maxlength="35">
+                    <input class="panel" type="password" name="password" placeholder="Hasło" maxlength="25">
+                    <input class="panel" type="password" name="password2" placeholder="Powtórz hasło" maxlength="25">
+                    <input class="panel" type="text" name="Name" placeholder="Imię" maxlength="25">
+                    <input class="panel" type="text" name="Surname" placeholder="Nazwisko" maxlength="35">
+                    <input class="panel" type="text" name="City" placeholder="Miasto" maxlength="30">
+                    <input class="panel" type="text" name="Zip-code" placeholder="Kod pocztowy (XX-XXX)"  maxlength="6" minlength="6">
+                    <input class="panel" type="text" name="Address" placeholder="Adres (Ulica i numer domu/numer mieszkania)" maxlength="40"><br>
                     <input class="panel-zaj" type="submit" name="rejestruj" value="Zajerestruj">
                 </form>
             </div>
