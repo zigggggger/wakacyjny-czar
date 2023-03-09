@@ -74,20 +74,20 @@ function rejestracja($Username, $e_mail, $Password, $Password2, $Name, $Surname,
     }
 
 //LOGOWANIE
- function logowanie($Username, $Password)
- {
-    $conn = DB()->query("SELECT ID, Username, Password FROM user WHERE Username = '$Username' ");
-    $dane = $conn->fetch_assoc();
-    if ($dane['Username'] == $Username && $dane['Password'] == $Password){
-        $_SESSION['Username'] = $Username;
-        $_SESSION['UserID'] = $dane['ID'];
-    }
-    else{
-        $_SESSION['error'] = 'Podano złą nazwę użytkownika lub hasło';
-    }
+//  function logowanie($Username, $Password)
+//  {
+//     $conn = DB()->query("SELECT ID, Username, Password FROM user WHERE Username = '$Username' ");
+//     $dane = $conn->fetch_assoc();
+//     if ($dane['Username'] == $Username && $dane['Password'] == $Password){
+//         $_SESSION['Username'] = $Username;
+//         $_SESSION['UserID'] = $dane['ID'];
+//     }
+//     else{
+//         $_SESSION['error'] = 'Podano złą nazwę użytkownika lub hasło';
+//     }
 
 
- }
+//  }
 
 
 
@@ -98,8 +98,8 @@ function rejestracja($Username, $e_mail, $Password, $Password2, $Name, $Surname,
         rejestracja($_POST["Username"], $_POST["e-mail"], $_POST["password"], $_POST["password2"], $_POST["Name"], $_POST["Surname"], $_POST["City"], $_POST["Zip-code"], $_POST["Address"]);
         header("location: /Logowanie.php");
     }
-    if(isset($_POST["loguj"])){
-        logowanie($_POST["Username"], $_POST["password"]);
-        header("location: /main.php");
-    }
+    // if(isset($_POST["loguj"])){
+    //     logowanie($_POST["Username"], $_POST["password"]);
+    //     header("location: /main.php");
+    // }
 ?>
