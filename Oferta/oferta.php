@@ -10,7 +10,7 @@
 </head>
 <body>
    
-    <div class="main">
+<div class="main">
         <div class="menu">
             <div class="Logo"> <img id="logo"#Logo src="../img/napislogo1.png" alt=""></div>
             <hr class="Blank">
@@ -32,17 +32,51 @@
     </div>
     
     <div class="oferty">
- 
-    <div class="oferty1"> Europa</div>
-    <div class="oferty1">Azja</div>
-    <div class="oferty1">Ameryka</div>
+        <div class="oferty1"> <button class="button" onclick="pokazeu()">Europa <ion-icon class="ikona" name="caret-up-outline"></ion-icon></button>
+            <div id="ofertaeu"> asasadfsaffasasfasfasfasfsfaasf</div>
+        </div>
 
+        <div class="oferty1"> <button class="button" onclick="pokazaz()">Azja <ion-icon class="ikona" name="caret-up-outline"></ion-icon></button>
+            <div id="ofertaaz"> asasadfsaffasasfasfasfasfsfaasf</div>
+        </div>
+        
+        <div class="oferty1"> <button class="button" onclick="pokazaa()">Ameryka <ion-icon class="ikona" name="caret-up-outline"></ion-icon></button>
+            <div id="ofertaaa"> asasadfsaffasasfasfasfasfsfaasf</div>
+        </div>
     </div>
         
 
-    </div>
 
-    
+</div>
+
+<script>
+    function pokazeu() {
+    var x = document.getElementById("ofertaeu");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    }
+    function pokazaz() {
+    var x = document.getElementById("ofertaaz");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    }
+    function pokazaa() {
+    var x = document.getElementById("ofertaaa");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    }
+
+
+</script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

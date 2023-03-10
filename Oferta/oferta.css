@@ -187,7 +187,6 @@ a {
     margin-top: 50px;
     padding: 10px;
 }
-
 .oferty1{
     width: 90%;
     font-size: 30px;
@@ -199,11 +198,53 @@ a {
     border-radius: 20px;
     margin-top: 10px ;
 }
+.button{
+    width: 100%;
+    height: fit-content;
+    font: 20px;
+    text-align: left;
+    border: 0px solid transparent;
+    font-size: 30px;
+    background-color: transparent;
+}
+
+
 .ikona{
     font-size: 20px;
     padding-right: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 85%;
-    display: inline-flex;
+    float: right;
+    margin-top: 1%;
+
+}
+
+
+#ofertaeu{
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 10px;
+    display: none;
+}
+#ofertaaz{
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 10px;
+    display: none;
+}
+#ofertaaa{
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 10px;
+    display: none;
 }
