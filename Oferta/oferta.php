@@ -10,7 +10,7 @@
 </head>
 <body>
    
-<div class="main">
+    <div class="main">
         <div class="menu">
             <div class="Logo"> <img id="logo"#Logo src="../img/napislogo1.png" alt=""></div>
             <hr class="Blank">
@@ -23,10 +23,27 @@
                 <div class="Konto1"><a href="../Konto/mojewycieczki.php">Moje wycieczki</a></div>
                 <div class="Konto1"><a href="../Konto/ustawienia.php">Ustawienia</a></div>
                 <div class="Konto1"><a href="../logowanie.php">Logowanie i rejestracja</a></div>
-
             </div>
         </div>
-</div>
 
+    <div class="opis">
+        <div class="opisnapis">Nasza oferta</div>
+        <div class="opisopis"> oferujemy wycieczki... itd itp marcin tu tekst wkleisz jak napiszesz ok? ok</div>
+    </div>
+    
+    <div class="oferty">
+ 
+    <div class="oferty1"> Europa</div>
+    <div class="oferty1">Azja</div>
+    <div class="oferty1">Ameryka</div>
+
+    </div>
+        
+
+    </div>
+
+    
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
