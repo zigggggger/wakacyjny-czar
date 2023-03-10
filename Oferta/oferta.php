@@ -32,15 +32,15 @@
     </div>
     
     <div class="oferty">
-        <div class="oferty1"> <button class="button" onclick="pokazeu()">Europa <ion-icon class="ikona" name="caret-up-outline"></ion-icon></button>
+        <div class="oferty1"> <button class="button" onclick="pokazeu()">Europa <ion-icon id="ikona" name="caret-up-outline"></ion-icon></button>
             <div id="ofertaeu"> asasadfsaffasasfasfasfasfsfaasf</div>
         </div>
 
-        <div class="oferty1"> <button class="button" onclick="pokazaz()">Azja <ion-icon class="ikona" name="caret-up-outline"></ion-icon></button>
+        <div class="oferty1"> <button class="button" onclick="pokazaz()">Azja <ion-icon class="ikona1" name="caret-up-outline"></ion-icon></button>
             <div id="ofertaaz"> asasadfsaffasasfasfasfasfsfaasf</div>
         </div>
         
-        <div class="oferty1"> <button class="button" onclick="pokazaa()">Ameryka <ion-icon class="ikona" name="caret-up-outline"></ion-icon></button>
+        <div class="oferty1"> <button class="button" onclick="pokazaa()">Ameryka <ion-icon class="ikona2" name="caret-up-outline"></ion-icon></button>
             <div id="ofertaaa"> asasadfsaffasasfasfasfasfsfaasf</div>
         </div>
     </div>
@@ -54,6 +54,7 @@
     var x = document.getElementById("ofertaeu");
     if (x.style.display === "none") {
         x.style.display = "block";
+
     } else {
         x.style.display = "none";
     }
