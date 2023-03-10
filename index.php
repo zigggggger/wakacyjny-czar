@@ -35,7 +35,10 @@
     </div>
 
     <div class="topoferta">
-        <div ></div>
+        <div class="topnap" >Nasza najpopularniejsza oferta:</div>
+        <div class="topka"><img class="topzdj" src="img/sample.jpg" alt="">
+        <div class="topcontent">in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis</div>
+        </div>
     </div>
 
     <div class="inspiracje">

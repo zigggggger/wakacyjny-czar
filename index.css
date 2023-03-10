@@ -1,39 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-body{
-    background:url("img/tło.png") no-repeat;
+body {
+    background: url("img/tło.png") no-repeat;
     background-size: cover;
     font-family: 'Open Sans';
 }
 
-.Logo{
+.Logo {
     width: 100%;
     height: fit-content;
 }
 
-.zdj{
+.zdj {
     margin: auto;
     display: flex;
     width: 55%;
 }
 
-.main{
+.main {
     width: 100%;
     height: fit-content;
     max-width: 1200px;
-    margin: auto ;
+    margin: auto;
     background-color: rgb(68, 72, 76, 0.4);
     margin-top: 40px;
     padding-bottom: 50px;
 }
-.menu{
+
+.menu {
     padding: 10px;
     margin: auto;
     width: 100%;
     display: flex;
-} 
+}
 
-.Home{
+.Home {
     background-color: white;
     height: 100%;
     max-height: 100px;
@@ -44,10 +45,10 @@ body{
     border-radius: 10px;
     text-align: center;
     margin-left: auto;
-
+    float: left;
 }
 
-.oferta{
+.oferta {
     background-color: white;
     height: 100%;
     max-height: 100px;
@@ -57,8 +58,10 @@ body{
     width: auto;
     border-radius: 10px;
     text-align: center;
+    float: left;
 }
-.Onas{
+
+.Onas {
     background-color: white;
     height: 100%;
     max-height: 200px;
@@ -70,8 +73,11 @@ body{
     width: 100%;
     max-width: 110px;
     text-align: center;
+    float: left;
+    min-width: 120px;
 }
-.Konto{
+
+.Konto {
     background-color: white;
     height: 100%;
     max-height: 200px;
@@ -84,9 +90,10 @@ body{
     max-width: 110px;
     text-align: center;
     margin-right: auto;
+    float: left;
 }
 
-.Konto1{
+.Konto1 {
     display: none;
     border: 0px solid transparent;
     position: relative;
@@ -99,7 +106,7 @@ body{
 
 }
 
-.Onas1{
+.Onas1 {
     display: none;
     border: 0px solid transparent;
     position: relative;
@@ -120,12 +127,13 @@ div.Onas:hover .Onas1 {
     display: block;
     background-color: lightgray;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
 
-.stopka{
+.stopka {
     background-color: white;
     width: 90%;
     height: 180px;
@@ -135,21 +143,21 @@ a {
     margin-top: 50px;
     margin-bottom: 50px;
 
-    
+
 }
 
-.napis{
+.napis {
     float: left;
     margin: 10px;
     padding: 5px;
     height: 100%;
-    margin-left:30px;
+    margin-left: 30px;
     font-size: 20px;
     width: 100%;
     height: fit-content;
 }
 
-.panelst{
+.panelst {
     width: 31%;
     min-width: fit-content;
     padding: 5px;
@@ -163,7 +171,7 @@ a {
 
 }
 
-.rekomendacje{
+.rekomendacje {
     background-color: white;
     width: 90%;
     margin: auto;
@@ -172,20 +180,25 @@ a {
     margin-bottom: 50px;
     border-radius: 30px;
     display: flex;
-}   
-
-
-.topoferta{
-    background-color: white;
-    width: 90%;
-    margin: auto;
-    height: 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 30px;
 }
 
-.inspiracje{
+.rekomendacja {
+    font-size: 20px;
+    width: 23%;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.ikona {
+    font-size: 45px;
+    padding-top: 10px;
+}
+
+
+
+
+.topoferta {
     background-color: white;
     width: 90%;
     margin: auto;
@@ -193,30 +206,55 @@ a {
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 30px;
-    
 }
 
-.rekomendacja{
-    font-size: 20px;
-    width: 25%;
+
+.topnap {
+    width: 100%;
+    height: fit-content;
+    font-size: 25px;
+    margin: 10PX;
+}
+.topka{
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+    display: flex;
+}
+
+.topzdj{
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    max-width: 400px;
+    float: left;
+    border-radius: 20px;
+
+}
+.topcontent{
+    max-width: 300px;
+    height: fit-content;
+    margin: 20px;
+}
+
+.inspiracje {
+    background-color: white;
+    width: 90%;
     margin: auto;
-    text-align: center;
-    
-
+    height: fit-content;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
 }
-
-.ikona{
-    font-size: 45px;
-    padding-top: 10px;
-}
-.mainins{
+.mainins {
     width: 100%;
     height: fit-content;
     font-size: 30px;
     margin: auto;
     text-align: center;
 }
-.inspiracja{
+
+.inspiracja {
     width: 28%;
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -226,12 +264,11 @@ a {
     margin: 6.4px;
 }
 
-.zdjins{
+
+.zdjins {
     float: left;
     width: 100%;
     border-radius: 20px;
 }
 
-.textins{
-
-}
+.textins {}
