@@ -26,10 +26,6 @@
             </div>
         </div>
 
-    <div class="opis">
-        <div class="opisnapis">Nasza oferta</div>
-        <div class="opisopis"> oferujemy wycieczki... itd itp marcin tu tekst wkleisz jak napiszesz ok? ok</div>
-    </div>
     
     <div class="oferty">
         <div class="oferty1"> <button class="button" onclick="pokazeu()">Europa <ion-icon id="ikona" name="caret-up-outline"></ion-icon></button>
